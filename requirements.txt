@@ -1,6 +1,6 @@
 argh==0.26.2    
 beautifulsoup4==4.8.1     
-behave=1.2.6     
+behave==1.2.6     
 bs4==0.0.1     
 cachier==1.2.8     
 certifi==2019.11.28

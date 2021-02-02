@@ -36,6 +36,7 @@ def send_welcome(message):
 
 @bot.message_handler(content_types=["text"])
 def question1(message):
+    send = None
     txt = message.text
     global answer
     if txt == '1️⃣ Сложение и вычитание':

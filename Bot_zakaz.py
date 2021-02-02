@@ -43,24 +43,24 @@ def question1(message):
         a = random.randint(500,1000)
         b = random.randint(0,500)
         c = random.choice(['-','+'])
-        bot.send_message(chat_id, "{} {} {} = ?".format(a, c, b))
+        bot.send_message(message.chat.id, "{} {} {} = ?".format(a, c, b))
         if c == '-':
             answer = a - b
-            send = bot.send_message(chat_id, 'Введите результат вычитания: ')
+            send = bot.send_message(message.chat.id, 'Введите результат вычитания: ')
         else:
             answer = a + b
-            send = bot.send_message(chat_id, 'Введите результат сложения: ')
+            send = bot.send_message(message.chat.id, 'Введите результат сложения: ')
     elif txt == "2️⃣ Умножение и деление":
         a = random.randint(50,100)
         b = random.randint(1,50)
         c = random.choice(['/', '*'])
-        bot.send_message(chat_id, "{} {} {} = ?".format(a,c,b))
+        bot.send_message(message.chat.id, "{} {} {} = ?".format(a,c,b))
         if c == '/':
             answer = a // b
-            send = bot.send_message(chat_id, 'Введите целую часть от деления:')
+            send = bot.send_message(message.chat.id, 'Введите целую часть от деления:')
         else:
             answer =  a * b
-            send = bot.send_message(chat_id, 'Введите результат умножения: ')
+            send = bot.send_message(message.chat.id, 'Введите результат умножения: ')
     elif txt == "3️⃣ Возведение в квадрат":
         a = random.randint(1,20)
         bot.send_message(chat_id, "{} в квадрате = ?".format(a))

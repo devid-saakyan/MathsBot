@@ -1,7 +1,6 @@
 import telebot
 from telebot import types
 import telegram
-import winde_keyboards
 import time
 import config
 import random
